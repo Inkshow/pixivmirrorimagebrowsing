@@ -1,0 +1,48 @@
+input.ax-input:focus,
+input.ax-input.ax-focus,
+input[type="text"]:focus,
+input[type="text"].ax-focus,
+input[type="file"]:focus,
+input[type="file"].ax-focus,
+textarea:focus,
+textarea.ax-focus {
+  color: unset;
+  box-shadow: 0 0 0 0.3rem rgb(126 204 197 / 20%);
+  border-color: rgba(126, 204, 197, 0.5) !important;
+}
+.ax-input-group .ax-with-suffix:after {
+  content: "";
+  width: 0px;
+  height: 100%;
+  background-color: rgba(126, 204, 197, 0.5);
+  opacity: 0;
+  transition: all 100ms linear;
+  position: absolute;
+  right: -1px;
+  top: 0;
+  z-index: 2;
+}
+.ax-btn:not(:active):focus {
+  box-shadow: 0 0 0 0.3rem rgba(126, 204, 197, 0.5);
+}
+.ax-btn:active {
+  color: rgba(126, 204, 197, 0.5);
+  background-color: #fafcff;
+}
+input:not([readonly]):not([disabled]):not([class*="ax-check"]):not(
+    [class*="ax-btn"]
+  ):hover,
+textarea:not([readonly]):not([disabled]):not([class*="ax-check"]):hover {
+  border-color: rgba(126, 204, 197, 0.5);
+}
+.ax-btn:hover {
+  color: #70c6be;
+  box-shadow: 0.2rem 0.2rem 1rem 0 rgba(126, 204, 197, 0.5);
+  background-color: #ffffff;
+}
+.ax-btn:hover:after {
+  border-color: #70c6be;
+}
+.ax-form-limit {
+  display: none;
+}
