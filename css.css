@@ -46,3 +46,14 @@ textarea:not([readonly]):not([disabled]):not([class*="ax-check"]):hover {
 .ax-form-limit {
   display: none;
 }
+.ax-flex-col {
+  align-items: center;
+  justify-content: center;
+}
+
+.ax-form-input {
+  width: 100%;
+}
+.ax-form-con {
+  width: 100%;
+}
