@@ -23,3 +23,9 @@ img {
   left: 15px;
   z-index: 2;
 }
+
+@media screen and (orientation: portrait) {
+  .ax-btn {
+    display: none;
+  }
+}

@@ -34,7 +34,6 @@ let i = setInterval(() => {
   }
 }, 100);
 function imgError(image) {
-  console.log("a");
-  $(image).parent().remove();
   flag = true;
+  $(image).parent().remove();
 }
